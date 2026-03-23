@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loving Homes | الأخبار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-shell">
+      <nav>
+        <div class="logo">
+          <div class="logo-icon">🐾</div>
+          <span data-t="logoText">Loving Homes</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-flex" id="navFlex">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="packages.html" data-t="packagesNav">الحزم</a></li>
+            <li><a href="why.html" data-t="whyNav">لماذا تختارنا</a></li>
+            <li><a href="policies.html" data-t="policiesNav">الشروط والسياسات</a></li>
+            <li><a href="prebooking.html" data-t="prebookingNav">متطلبات الحجز</a></li>
+            <li><a href="news.html" data-t="newsNav">المدونة / الأخبار</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="faq.html" data-t="faq">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="location-pill" href="contact.html" data-t="location">📍 هونغ كونغ</a>
+            <button id="font-dec" class="text-btn" aria-label="تصغير الخط">A-</button>
+            <button id="font-inc" class="text-btn" aria-label="تكبير الخط">A+</button>
+            <select id="lang-toggle" style="padding: 6px 12px; border-radius: 5px; border: 1px solid #ccc; background-color: transparent; cursor: pointer; font-size: 14px;">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+            <button id="theme-toggle" class="icon-btn">🌙</button>
+            <a href="contact.html" class="btn btn-primary" data-t="book">احجز الآن</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="news">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-t="newsTitle">المدونة / الأخبار</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <p class="section-intro" data-t="newsIntro">مقالات وأخبار تسلّط الضوء على نشاط الفندق والمحتوى التوعوي.</p>
+        <div class="grid news-grid">
+          <article class="card news-card">
+            <span class="news-meta" data-t="newsMeta1">مقال | مارس 2026</span>
+            <h3 data-t="newsArticle1Title">كيفية تجهيز الكلب للإقامة</h3>
+            <p data-t="newsArticle1Body">تدريبات قصيرة قبل الحجز وأدوات مألوفة تقلّل القلق وتسرّع التكيف.</p>
+          </article>
+          <article class="card news-card">
+            <span class="news-meta" data-t="newsMeta2">نصائح | فبراير 2026</span>
+            <h3 data-t="newsArticle2Title">طرق تقليل القلق عند الحيوانات</h3>
+            <p data-t="newsArticle2Body">يعمل التنفس العميق والمكافآت الصغيرة على بناء ثقة الكلب في البيئة الجديدة.</p>
+          </article>
+          <article class="card news-card">
+            <span class="news-meta" data-t="newsMeta3">أخبار | يناير 2026</span>
+            <h3 data-t="newsArticle3Title">تحديثات الفندق</h3>
+            <p data-t="newsArticle3Body">أضفنا جناحًا جديدًا للخدمات البيطرية وتوسيع منطقة اللعب الخارجية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 data-t="footerLogo">Loving Homes</h4>
+          <p data-t="footerDesc">فندق كلاب فاخر بمعايير عالمية.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footerLinks">روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footerContact">تواصل معنا</h4>
+          <p>Hong Kong</p>
+          <p>+86 139 4725 8643</p>
+          <p>ksjjdpoj@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Loving Homes. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

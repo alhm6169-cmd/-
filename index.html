@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loving Homes | فندق الكلاب الفاخر</title>
+  <title>Loving Homes | الرئيسية</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
@@ -17,33 +17,36 @@
           <div class="logo-icon">🐾</div>
           <span data-t="logoText">Loving Homes</span>
         </div>
-
-        <ul class="nav-links">
-          <li><a href="#home" class="active" data-t="home">الرئيسية</a></li>
-          <li><a href="#about" data-t="about">من نحن</a></li>
-      <li><a href="#services" data-t="services">الخدمات</a></li>
-      <li><a href="#packages" data-t="packagesNav">الحزم</a></li>
-      <li><a href="#why" data-t="whyNav">لماذا تختارنا</a></li>
-      <li><a href="#policies" data-t="policiesNav">الشروط والسياسات</a></li>
-      <li><a href="#prebooking" data-t="prebookingNav">متطلبات الحجز</a></li>
-      <li><a href="#news" data-t="newsNav">المدونة / الأخبار</a></li>
-      <li><a href="#gallery" data-t="gallery">معرض الصور</a></li>
-      <li><a href="#tips" data-t="tips">نصائح</a></li>
-      <li><a href="#faq" data-t="faq">الأسئلة الشائعة</a></li>
-      <li><a href="#contact" data-t="contact">تواصل معنا</a></li>
-        </ul>
-
-        <div class="nav-actions">
-          <a class="location-pill" href="#contact" data-t="location">📍 هونغ كونغ</a>
-          <button id="font-dec" class="text-btn" aria-label="تصغير الخط">A-</button>
-          <button id="font-inc" class="text-btn" aria-label="تكبير الخط">A+</button>
-          <select id="lang-toggle" style="padding: 6px 12px; border-radius: 5px; border: 1px solid #ccc; background-color: transparent; cursor: pointer; font-size: 14px;">
-            <option value="ar">العربية</option>
-            <option value="en">English</option>
-            <option value="zh">中文</option>
-          </select>
-          <button id="theme-toggle" class="icon-btn">🌙</button>
-          <a href="#contact" class="btn btn-primary" data-t="book">احجز الآن</a>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-flex" id="navFlex">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="packages.html" data-t="packagesNav">الحزم</a></li>
+            <li><a href="why.html" data-t="whyNav">لماذا تختارنا</a></li>
+            <li><a href="policies.html" data-t="policiesNav">الشروط والسياسات</a></li>
+            <li><a href="prebooking.html" data-t="prebookingNav">متطلبات الحجز</a></li>
+            <li><a href="news.html" data-t="newsNav"> الأخبار</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="faq.html" data-t="faq">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="location-pill" href="contact.html" data-t="location">📍 هونغ كونغ</a>
+            <button id="font-dec" class="text-btn" aria-label="تصغير الخط">A-</button>
+            <button id="font-inc" class="text-btn" aria-label="تكبير الخط">A+</button>
+            <select id="lang-toggle" style="padding: 6px 12px; border-radius: 5px; border: 1px solid #ccc; background-color: transparent; cursor: pointer; font-size: 14px;">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+            <button id="theme-toggle" class="icon-btn">🌙</button>
+            <a href="contact.html" class="btn btn-primary" data-t="book">احجز الآن</a>
+          </div>
         </div>
       </nav>
     </div>
@@ -57,8 +60,8 @@
             <h1 data-t="heroTitle">راحة وأمان لصديقك الصغير</h1>
             <p data-t="heroDesc">تجربة فندقية فاخرة مصممة خصيصاً لكلبك، حيث يتمتع برعاية متخصصة وراحة قصوى في بيئة آمنة وفاخرة.</p>
             <div class="hero-btns" style="display:flex; gap: 12px; margin-top: 12px;">
-              <a href="#contact" class="btn btn-primary" data-t="book">احجز الآن</a>
-              <a href="#services" class="btn" style="border:1px solid var(--dark);" data-t="exploreServices">استكشف المرافق</a>
+              <a href="contact.html" class="btn btn-primary" data-t="book">احجز الآن</a>
+              <a href="services.html" class="btn" style="border:1px solid var(--dark);" data-t="exploreServices">استكشف المرافق</a>
             </div>
             <div class="chips">
               <div class="chip" data-t="chipCare">24/7 رعاية</div>
@@ -73,483 +76,59 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="pages">
       <div class="container">
         <div class="section-title">
-          <h2 data-t="aboutTitle">من نحن</h2>
+          <h2>تصفّح الصفحات</h2>
           <div class="gold-divider"></div>
         </div>
-        <div class="split">
-          <div>
-            <h3 data-t="aboutIntroTitle">نبذة سريعة</h3>
+        <p class="section-intro">اختر الصفحة المناسبة لمعرفة التفاصيل أو الحجز.</p>
+        <div class="page-grid">
+          <a class="page-card" href="about.html">
+            <h3 data-t="aboutTitle">من نحن</h3>
             <p data-t="aboutIntroBody">«Loving Homes» فندق كلاب فاخر يقدّم إقامة آمنة، برامج ترفيهية، ورعاية طبية خاضعة لمعايير دولية.</p>
-            <h4 style="margin-top:14px;" data-t="visionTitle">رؤيتنا ورسالتنا</h4>
-            <p data-t="visionBody">أن نصبح الوجهة الأولى للمالكين الذين يبحثون عن بيئة حانية وآمنة لأصدقائهم.</p>
-            <div class="why-list">
-              <div class="why-item" data-t="why1">تحديثات صور يومية</div>
-              <div class="why-item" data-t="why2">مسارات لعب داخلية وخارجية</div>
-              <div class="why-item" data-t="why3">طاقم ثنائي اللغة</div>
-              <div class="why-item" data-t="why4">خطة تغذية مخصصة</div>
-            </div>
-          </div>
-          <div>
-            <img class="hero-img" src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1200&q=80" alt="مرافق الفندق">
-          </div>
+          </a>
+          <a class="page-card" href="services.html">
+            <h3 data-t="servicesTitle">الخدمات والحزم</h3>
+            <p data-t="servicesIntro">صالة للحلاقة ومنتجع – المرافق المقدمة</p>
+          </a>
+          <a class="page-card" href="packages.html">
+            <h3 data-t="packagesTitle">حزم الإقامة</h3>
+            <p data-t="packagesNote">يمكن تصميم حزم مخصصة حسب احتياج كلبك.</p>
+          </a>
+          <a class="page-card" href="why.html">
+            <h3 data-t="whyTitle">لماذا تختارنا</h3>
+            <p data-t="whyIntro">نركّز على الجمع بين الأمان والاحتراف والتواصل الشفاف.</p>
+          </a>
+          <a class="page-card" href="policies.html">
+            <h3 data-t="policiesTitle">الشروط والسياسات</h3>
+            <p data-t="policyCancelDesc">نعالج الإلغاءات بشفافية لتقليل النزاعات.</p>
+          </a>
+          <a class="page-card" href="prebooking.html">
+            <h3 data-t="prebookingTitle">متطلبات الحجز</h3>
+            <p data-t="prebookingIntro">تنظيم القبول يقلّل المخاطر ويضمن بيئة آمنة.</p>
+          </a>
+          <a class="page-card" href="news.html">
+            <h3 data-t="newsTitle">المدونة / الأخبار</h3>
+            <p data-t="newsIntro">مقالات وأخبار تسلط الضوء على نشاط الفندق.</p>
+          </a>
+          <a class="page-card" href="gallery.html">
+            <h3 data-t="galleryTitle">معرض الصور</h3>
+            <p>صور حقيقية من المرافق والضيوف السعداء.</p>
+          </a>
+          <a class="page-card" href="tips.html">
+            <h3 data-t="tipsTitle">نصائح العناية</h3>
+            <p data-t="tipMindBody">قدّم ألعابًا وأنشطة تحفّز عقل الكلب لتقليل الملل.</p>
+          </a>
+          <a class="page-card" href="faq.html">
+            <h3 data-t="faqTitle">الأسئلة الشائعة</h3>
+            <p data-t="faqA1">نحن متاحون يوميًا لاستقبال وتسليم الحيوانات الأليفة.</p>
+          </a>
+          <a class="page-card" href="contact.html">
+            <h3 data-t="contactTitle">تواصل معنا</h3>
+            <p data-t="successMsg">تم إرسال رسالتك بنجاح ✅</p>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="servicesTitle">الخدمات والحزم</h2>
-          <div class="gold-divider"></div>
-        </div>
-
-        <p style="text-align:center; color:var(--muted); margin-bottom:18px;" data-t="servicesIntro">صالة للحلاقة ومنتجع – المرافق المقدمة</p>
-        <div class="grid">
-          <div class="card">
-            <img src="https://s.alicdn.com/@sc04/kf/Hb0bc1378a40042b390b3a361003d8259o/Panoramic-Iron-Wire-Dog-Cage-Small-Dog-Toilet-Separated-One-Room-One-Hall-One-Bathroom-Large-Space-Pet-Kennel-Luxury-Villa.jpg_300x300.jpg" alt="غرف مزودة بتدفئة وتبريد">
-            <h3 data-t="service1">غرف مزودة بتدفئة/تبريد تحت الأرضية وتلفزيون</h3>
-            <p data-t="service1Desc">راحة حرارية وترفيه لضمان إقامة مثالية.</p>
-          </div>
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=900&q=80" alt="خدمة التوصيل">
-            <h3 data-t="service2">توصيل من وإلى المكان</h3>
-            <p data-t="service2Desc">نقل آمن ومريح لكلبك في الاتجاهين.</p>
-          </div>
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="مراعي خارجية">
-            <h3 data-t="service3">مراعي خارجية آمنة</h3>
-            <p data-t="service3Desc">مساحات خضراء مؤمنة للركض واللعب بحرية.</p>
-          </div>
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=900&q=80" alt="خدمات بيطرية 24 ساعة">
-            <h3 data-t="service4">خدمات بيطرية متاحة على مدار 24 ساعة</h3>
-            <p data-t="service4Desc">أطباء بيطريون جاهزون لأي طارئ طوال اليوم.</p>
-          </div>
-           <div class="card">
-            <img src="https://www.almamlakatv.com//images/articles/big/2023/5/6463a1a48321b.jpeg" alt="مراقبة الحيوانات الأليفة">
-            <h3 data-t="amenityMon">مراقبة الحيوانات الأليفة</h3>
-<p data-t="amenityMonDesc">نظام مراقبة مستمر بالكاميرات لمتابعة حيوانك الأليف وضمان سلامته طوال الوقت.</p>
-          </div><div class="card">
-            <img src="https://nhvpethealth.com/wp-content/uploads/2023/09/National-Walk-Your-Dog-Week-%E2%80%93-Safest-Ways-for-Walking-Running-with-Dog.jpg" alt="خدمات بيطرية 24 ساعة">
-            <h3  data-t="amenityWalk">التمشية في الغابات</h3>
-<p data-t="amenityWalkDesc">جولات تمشية يومية في مسارات طبيعية آمنة تمنح كلبك نشاطًا وحيوية.</p>  
-        </div><div class="card">
-            <img src="https://www.aljazeera.net/wp-content/uploads/2018/05/6451083a-87ed-452b-a717-c19977089897.jpeg?resize=686%2C513&quality=80" alt="خدمات بيطرية 24 ساعة">
-            <h3 data-t="amenityGrass">مساحة عشب خاصة</h3>
-<p data-t="amenityGrassDesc">منطقة عشب نظيفة ومسيّجة مخصصة للعب والاسترخاء بحرية تامة.</p>          </div>
-          <div class="card">
-            <img src="https://s.alicdn.com/@sc04/kf/H2fd86bef89604ea1a0adf389bc81802f7/Park-Playground-Dog-Toy-Dog-Agility-Training-Open-Tunnel-Play-Tunnel-for-Training-Dog.jpg" alt="خدمات بيطرية 24 ساعة">
-            <h3 data-t="amenityBarn">حظيرة لعب داخلية</h3>
-<p data-t="amenityBarnDesc">منطقة لعب داخلية مجهزة بألعاب آمنة للمرح والنشاط في جميع الأوقات.</p>          </div>
-         
-        </div>
-      </div>
-</section>
-
-<section id="packages">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-t="packagesTitle">حزم الإقامة</h2>
-      <div class="gold-divider"></div>
-    </div>
-    <div class="packages">
-      <!-- حزمة اليوم الواحد -->
-      <div class="package-card">
-        <h4 data-t="pkgDay">حزمة اليوم الواحد</h4>
-        <p class="price" data-t="pkgDayPrice">99 يوان / يوم</p>
-        <ul>
-          <li data-t="pkgDay1">✓ المشي مرتين يوميًا</li>
-          <li data-t="pkgDay2">✓ منطقة لعب خارجية</li>
-          <li data-t="pkgDay3">✓ مسار الرشاقة</li>
-          <li data-t="pkgDay4">✓ حفر حفرة في الرمل</li>
-        </ul>
-        <button class="btn btn-primary booking-btn" data-package="pkgDay" data-t="choose">اختر الحزمة</button>
-      </div>
-
-      <!-- الحزمة الكلاسيكية -->
-      <div class="package-card popular">
-        <span class="badge" data-t="popular">الأكثر شهرة</span>
-        <h4 data-t="pkgClassic">الحزمة الكلاسيكية</h4>
-        <p class="price" data-t="pkgClassicPrice">249 يوان / 3 أيام</p>
-        <ul>
-          <li data-t="pkgClassic1">✓ المشي ثلاث مرات</li>
-          <li data-t="pkgClassic2">✓ ممارسة ثلاث أنشطة يوميًا</li>
-          <li data-t="pkgClassic3">✓ حظيرة لعب داخلية</li>
-          <li data-t="pkgClassic4">✓ منطقة للاسترخاء</li>
-          <li data-t="pkgClassic5">✓ جلسة حلاقة وتنظيف</li>
-        </ul>
-        <button class="btn btn-primary booking-btn" data-package="pkgClassic" data-t="choose">اختر الحزمة</button>
-      </div>
-
-      <!-- الحزمة المميزة -->
-      <div class="package-card">
-        <h4 data-t="pkgPremium">الحزمة المميزة</h4>
-        <p class="price" data-t="pkgPremiumPrice">499 يوان / أسبوع</p>
-        <ul>
-          <li data-t="pkgPremium1">✓ المشي أربع مرات وممارسة أربع أنشطة يوميًا</li>
-          <li data-t="pkgPremium2">✓ مساحة عشب خاصة</li>
-          <li data-t="pkgPremium3">✓ تحديثات صور يومية</li>
-          <li data-t="pkgPremium4">✓ مكافآت حسب الاتفاق مع المالك</li>
-          <li data-t="pkgPremium5">✓ فحص بيطري شامل</li>
-        </ul>
-        <button class="btn btn-primary booking-btn" data-package="pkgPremium" data-t="choose">اختر الحزمة</button>
-      </div>
-
-      <!-- الحزمة المخصصة -->
-      <div class="package-card">
-        <h4 data-t="pkgCustom">الحزمة المخصصة</h4>
-        <p class="price" data-t="pkgCustomPrice">حسب الطلب</p>
-        <ul>
-          <li data-t="pkgCustom1">✓ تختار المدة والمرافق</li>
-          <li data-t="pkgCustom2">✓ خطة تغذية بحسب طلبك</li>
-          <li data-t="pkgCustom3">✓ إضافة خدمات نقل/صور/تدريب</li>
-        </ul>
-        <button class="btn btn-primary booking-btn" data-package="pkgCustom" data-t="customRequest">أرسل طلبك</button>
-      </div>
-    </div>
-
-    <p class="note" data-t="packagesNote">يمكن تصميم حزم مخصصة حسب احتياج كلبك.</p>
-  </div>
-</section>
-
-    <section id="why">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="whyTitle">لماذا تختارنا</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <p class="section-intro" data-t="whyIntro">نركّز على الجمع بين الأمان والاحتراف والتواصل الشفاف ليشعر مالكك بالثقة من لحظة الحجز.</p>
-        <div class="split" style="gap: 30px; align-items: stretch;">
-          <div>
-            <div class="grid why-grid">
-              <article class="card why-card">
-                <h3 data-t="whyPoint1Title">مراقبة بالكاميرات على مدار الساعة</h3>
-                <p data-t="whyPoint1Body">فريق المراقبة يتابع كل غرفة ويبلغ فوريًا عن أي تغيرات غير متوقعة.</p>
-              </article>
-              <article class="card why-card">
-                <h3 data-t="whyPoint2Title">فريق رعاية متخصص</h3>
-                <p data-t="whyPoint2Body">أخصائيين مدرّبين في التغذية والسلوك والإسعاف لتلبية احتياجات كل كلب.</p>
-              </article>
-              <article class="card why-card">
-                <h3 data-t="whyPoint3Title">مرافق آمنة ومسيجة</h3>
-                <p data-t="whyPoint3Body">مسارات فردية وأسوار عالية تضمن بيئة خالية من المفاجآت.</p>
-              </article>
-              <article class="card why-card">
-                <h3 data-t="whyPoint4Title">تحديثات يومية وخدمات بيطرية</h3>
-                <p data-t="whyPoint4Body">نرسل صورًا وتحديثات عن الصحة مع إمكانية استشارة الطبيب في أي لحظة.</p>
-              </article>
-            </div>
-          </div>
-          <div class="why-stats">
-            <div class="why-stat">
-              <strong data-t="whyStat1Value">500+</strong>
-              <span data-t="whyStat1Label">عميل راضٍ</span>
-            </div>
-            <div class="why-stat">
-              <strong data-t="whyStat2Value">1000+</strong>
-              <span data-t="whyStat2Label">إقامة ناجحة</span>
-            </div>
-            <div class="why-stat">
-              <strong data-t="whyStat3Value">24/7</strong>
-              <span data-t="whyStat3Label">رعاية متواصلة</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="policies">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="policiesTitle">الشروط والسياسات</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <div class="grid policy-grid">
-          <article class="card policy-card">
-            <h3 data-t="policyCancelTitle">سياسة الإلغاء</h3>
-            <p data-t="policyCancelDesc">نحافظ على مرونة مع ضمان الاستقرار التشغيلي.</p>
-            <ul>
-              <li data-t="policyCancelRule1">إلغاء مجاني قبل 48 ساعة من الموعد.</li>
-              <li data-t="policyCancelRule2">خصم 30% عند الإلغاء خلال 48 ساعة.</li>
-              <li data-t="policyCancelRule3">استثناءات للطوارئ الطبية مع تقديم وثائق معتمدة.</li>
-            </ul>
-          </article>
-          <article class="card policy-card">
-            <h3 data-t="policyStayTitle">شروط الإقامة</h3>
-            <p data-t="policyStayDesc">القواعد تهدف للراحة المشتركة وتنظيم العلاقة داخل المنشأة.</p>
-            <ul>
-              <li data-t="policyStayRule1">الالتزام بمواعيد التسليم والاستلام المحددة.</li>
-              <li data-t="policyStayRule2">احترام التعليمات والأنظمة الداخلية في كل مناطق الفندق.</li>
-              <li data-t="policyStayRule3">المسؤولية عن الأغراض الشخصية تبقى على عاتق المالك.</li>
-            </ul>
-          </article>
-          <article class="card policy-card">
-            <h3 data-t="policyEmergencyTitle">سياسة الطوارئ</h3>
-            <p data-t="policyEmergencyDesc">رسم خطة واضحة يخفّف التوتر ويسرّع اتخاذ القرار.</p>
-            <ul>
-              <li data-t="policyEmergencyRule1">التواصل الفوري مع المالك لتوضيح الحالة.</li>
-              <li data-t="policyEmergencyRule2">نقل الحيوان إلى عيادة معتمدة عند الحاجة.</li>
-              <li data-t="policyEmergencyRule3">توثيق الحالة وحفظ السجلات للمراجعة اللاحقة.</li>
-            </ul>
-          </article>
-          <article class="card policy-card">
-            <h3 data-t="policyLiabilityTitle">بند المسؤولية</h3>
-            <p data-t="policyLiabilityDesc">نحدد حدود مسؤولية الفندق ومسؤوليات المالك لتفادي سوء التفاهم.</p>
-            <ul>
-              <li data-t="policyLiabilityRule1">إفصاح مسبق عن أي حالة طبية أو حساسية.</li>
-              <li data-t="policyLiabilityRule2">المالك مسؤول عن صحة الحيوان قبل الوصول.</li>
-              <li data-t="policyLiabilityRule3">الفندق مسؤول عن الرعاية ضمن النطاق المذكور.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="prebooking">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="prebookingTitle">المتطلبات قبل الحجز</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <p class="section-intro" data-t="prebookingIntro">تنظيم القبول يقلّل المخاطر ويضمن بيئة آمنة لكل الحيوانات الموجودة.</p>
-        <div class="grid prebooking-grid">
-          <article class="card prebooking-card">
-            <h3 data-t="prebookingAgeTitle">عمر الكلب المقبول</h3>
-            <p data-t="prebookingAgeBody">نستقبل الكلاب بين سدّة وستة عشر عامًا (من 6 أشهر إلى 10 سنوات) لتقليل الحالات التي تحتاج رعاية خاصة جدًا.</p>
-          </article>
-          <article class="card prebooking-card">
-            <h3 data-t="prebookingVaxTitle">حالة التطعيم</h3>
-            <p data-t="prebookingVaxBody">نطلب تطعيم السعار واللقاحات الأساسية مع شهادة حديثة لضمان السلامة الصحية.</p>
-          </article>
-          <article class="card prebooking-card">
-            <h3 data-t="prebookingBehaviorTitle">السلوك المطلوب</h3>
-            <p data-t="prebookingBehaviorBody">يجب أن يكون الكلب غير عدواني، معتاد على الاختلاط ومدرّب على أساسيات الطاعة لتقليل الحوادث.</p>
-          </article>
-          <article class="card prebooking-card">
-            <h3 data-t="prebookingBringTitle">الأشياء التي يجب إحضارها</h3>
-            <p data-t="prebookingBringIntro">أحضِر العناصر التي تهدئ كلبك وتُسهِم في انتظام روتينه.</p>
-            <ul>
-              <li data-t="prebookingBringItem1">طعامه الخاص.</li>
-              <li data-t="prebookingBringItem2">دفتر التطعيم المحدث.</li>
-              <li data-t="prebookingBringItem3">أداة أو لعبة مألوفة له.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="news">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="newsTitle">المدونة / الأخبار</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <p class="section-intro" data-t="newsIntro">مقالات وأخبار تسلّط الضوء على نشاط الفندق والمحتوى التوعوي.</p>
-        <div class="grid news-grid">
-          <article class="card news-card">
-            <span class="news-meta" data-t="newsMeta1">مقال | مارس 2026</span>
-            <h3 data-t="newsArticle1Title">كيفية تجهيز الكلب للإقامة</h3>
-            <p data-t="newsArticle1Body">تدريبات قصيرة قبل الحجز وأدوات مألوفة تقلّل القلق وتسرّع التكيف.</p>
-          </article>
-          <article class="card news-card">
-            <span class="news-meta" data-t="newsMeta2">نصائح | فبراير 2026</span>
-            <h3 data-t="newsArticle2Title">طرق تقليل القلق عند الحيوانات</h3>
-            <p data-t="newsArticle2Body">يعمل التنفس العميق والمكافآت الصغيرة على بناء ثقة الكلب في البيئة الجديدة.</p>
-          </article>
-          <article class="card news-card">
-            <span class="news-meta" data-t="newsMeta3">أخبار | يناير 2026</span>
-            <h3 data-t="newsArticle3Title">تحديثات الفندق</h3>
-            <p data-t="newsArticle3Body">أضفنا جناحًا جديدًا للخدمات البيطرية وتوسيع منطقة اللعب الخارجية.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-<!-- مودال الحجز -->
-<div id="booking-modal" class="modal" aria-hidden="true">
-  <div class="modal-backdrop"></div>
-  <div class="modal-content">
-    <button class="modal-close" aria-label="Close">×</button>
-    <h3 data-t="bookingTitle">نموذج شراء/حجز الحزمة</h3>
-    <p data-t="bookingDesc">املأ البيانات التالية لإتمام الطلب.</p>
-    <form id="bookingForm" class="contact-form" style="margin-top:8px;">
-      <input id="bk-name" type="text" required data-ph="namePlaceholder" placeholder="الاسم الكامل">
-      <input id="bk-email" type="email" required data-ph="emailPlaceholder" placeholder="البريد الإلكتروني">
-      <input id="bk-phone" type="tel" required data-ph="phonePlaceholder" placeholder="رقم الهاتف">
-      <select id="bk-package" required>
-        <option value="pkgDay" data-t="pkgDay">حزمة اليوم</option>
-        <option value="pkgClassic" data-t="pkgClassic">الحزمة الكلاسيكية</option>
-        <option value="pkgPremium" data-t="pkgPremium">الحزمة المميزة</option>
-        <option value="pkgCustom" data-t="pkgCustom">الحزمة المخصصة</option>
-      </select>
-      <textarea id="bk-note" rows="4" data-ph="customReqPlaceholder" placeholder="أضف طلبك هنا..."></textarea>
-      <h4 data-t="paymentTitle">طريقة الدفع</h4>
-      <div class="payment-grid">
-        <label><input type="radio" name="pay" value="card" checked> <span data-t="payCard">بطاقة ائتمان</span></label>
-        <label><input type="radio" name="pay" value="cash"> <span data-t="payCash">دفع عند الوصول</span></label>
-        <label><input type="radio" name="pay" value="transfer"> <span data-t="payTransfer">تحويل إلكتروني</span></label>
-      </div>
-      <button class="btn btn-primary" type="submit" data-t="confirmBuy">تأكيد الشراء</button>
-    </form>
-    <div id="bookingSuccess" class="success-message" data-t="bookingSuccess">تم استلام طلبك وسنتواصل معك للتأكيد.</div>
-  </div>
-</div>
-
-<!-- JavaScript لتفعيل المودال -->
-    </section>
-
-
-    <section id="gallery">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="galleryTitle">معرض الصور</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <div class="gallery">
-          <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=800&q=80" alt="غرفة إقامة">
-          <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=800&q=80" alt="منطقة لعب">
-          <img src="https://humanesocietysoco.org/wp-content/uploads/2024/06/dog-shaking-hands.jpg" alt="تدريب سلوكي">
-          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=800&q=80" alt="جلسة عناية">
-          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="استقبال الفندق">
-           <img src="https://media.majarracdn.cloud/pop/2025/10/imagedogstraining-golden-labrador-puppy-yardblog-415x250.jpg" alt="مسار خارجي">
-          <img src="https://media.elbalad.news/2024/10/large/897/4/431.jpg" alt="مسار خارجي">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycDDX253inwg64wArEmGA8v-k17rr2XMLEw&s" alt="مسار خارجي">
-          <img src="https://framerusercontent.com/images/XSJ8Llae7DPenHZRoZueq7Lw.jpg?width=1800&height=1385" alt="مسار خارجي">
-          <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=800&q=80" alt="مسار خارجي">
-        </div>
-      </div>
-    </section>
-
-    <section id="tips">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="tipsTitle">نصائح العناية</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <div class="tips">
-  <div class="tip">
-    <h4 data-t="tipWalkTitle">نصائح تمشية الكلاب</h4>
-    <p data-t="tipWalkBody">
-      استخدم طوقًا أو حزامًا مناسبًا، واحمل ماءً نظيفًا لكلبك خاصة في الطقس الحار،
-      وحافظ على وتيرة مشي مريحة مع فترات استراحة قصيرة.
-    </p>
-  </div>
-
-  <div class="tip">
-    <h4 data-t="tipFurTitle">العناية بالفرو</h4>
-    <p data-t="tipFurBody">
-      قم بتمشيط الفرو بانتظام لإزالة الشعر المتساقط ومنع التشابك،
-      واستخدم شامبو مخصص للكلاب عند الاستحمام للحفاظ على صحة الجلد.
-    </p>
-  </div>
-
-  <div class="tip">
-    <h4 data-t="tipPrepTitle">تجهيز الكلب للإقامة</h4>
-    <p data-t="tipPrepBody">
-      أحضر اللعبة أو البطانية المفضلة لكلبك لتقليل التوتر،
-      وتأكد من تحديث بطاقة اللقاحات وتعريف الكلب بالمكان بشكل تدريجي.
-    </p>
-  </div>
-
-  <div class="tip">
-    <h4 data-t="tipFoodTitle">تغذية متوازنة</h4>
-    <p data-t="tipFoodBody">
-      قدّم وجبات متوازنة مرتين إلى ثلاث مرات يوميًا،
-      وتجنب تغيير نوع الطعام بشكل مفاجئ لتفادي مشاكل الهضم.
-    </p>
-  </div>
-
-  <div class="tip">
-    <h4 data-t="tipMindTitle">التمارين العقلية</h4>
-    <p data-t="tipMindBody">
-      قدّم ألعابًا وأنشطة تحفّز عقل الكلب مثل الألغاز أو البحث عن الطعام،
-      فهذا يساعد على تقليل الملل والسلوكيات غير المرغوبة.
-    </p>
-  </div>
-
-  <div class="tip">
-    <h4 data-t="tipHealthTitle">الرعاية الصحية الدورية</h4>
-    <p data-t="tipHealthBody">
-      قم بزيارة الطبيب البيطري بانتظام للفحص الروتيني،
-      وتأكد من متابعة الوقاية ضد الطفيليات مثل البراغيث والقراد.
-    </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="faqTitle">الأسئلة الشائعة</h2>
-          <div class="gold-divider"></div>
-        </div>
-        <div class="faq">
-          <details open>
-            <summary> <span data-t="faqQ1">ما هي ساعات العمل لديكم؟</span></summary>
-            <p data-t="faqA1">نحن متاحون يوميًا لاستقبال وتسليم الحيوانات الأليفة، كما تتوفر الرعاية على مدار 24 ساعة داخل المنشأة.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ2">هل يمكنني زيارة المكان قبل الحجز؟</span></summary>
-            <p data-t="faqA2">نعم، نرحب بزيارتك للموقع بعد حجز موعد مسبق للتعرف على المرافق والخدمات.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ3">ماذا يجب أن أحضر مع كلبي عند الإقامة؟</span></summary>
-            <p data-t="faqA3">يفضل إحضار طعام الكلب الخاص به، وأي أدوية يحتاجها، بالإضافة إلى معلوماته الصحية الأساسية.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ4">هل توفرون خدمة التوصيل؟</span></summary>
-            <p data-t="faqA4">نعم، نوفر خدمة توصيل آمنة من وإلى الموقع لتسهيل تجربة العملاء.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ5">هل يتم إخراج الكلاب للمشي يوميًا؟</span></summary>
-            <p data-t="faqA5">نعم، يتم توفير جولات مشي يومية وفقًا للحزمة المختارة لضمان نشاط الكلب وراحته.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ6">ماذا يحدث في حال الطوارئ الطبية؟</span></summary>
-            <p data-t="faqA6">لدينا خدمات بيطرية متاحة على مدار 24 ساعة للتعامل مع أي حالة طارئة بسرعة واحترافية.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ7">هل يمكن حجز باقات مخصصة؟</span></summary>
-            <p data-t="faqA7">نعم، نوفر باقات مخصصة للإقامات الطويلة أو للحيوانات ذات الاحتياجات الخاصة. يرجى التواصل معنا للترتيب.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ8">كيف أستلم تحديثات عن كلبي أثناء الإقامة؟</span></summary>
-            <p data-t="faqA8">نرسل تحديثات وصور يومية لطمأنتك على حالة حيوانك الأليف.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ9">هل المكان آمن للكلاب؟</span></summary>
-            <p data-t="faqA9">نعم، جميع المرافق مؤمنة وتخضع للمراقبة المستمرة لضمان أعلى مستويات السلامة.</p>
-          </details>
-          <details>
-            <summary> <span data-t="faqQ10">كيف يمكنني الحجز؟</span></summary>
-            <p data-t="faqA10">يمكنك الحجز عبر صفحة التواصل في الموقع أو الاتصال بنا مباشرة.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2 data-t="contactTitle">تواصل معنا</h2>
-          <div class="gold-divider"></div>
-        </div>
-
-        <div id="successMsg" class="success-message" data-t="successMsg">تم إرسال رسالتك بنجاح ✅</div>
-
-        <form id="contactForm" class="contact-form">
-          <input id="name" type="text" required minlength="3" data-ph="namePlaceholder" placeholder="الاسم الكامل">
-          <input id="email" type="email" required data-ph="emailPlaceholder" placeholder="البريد الإلكتروني">
-          <input id="subject" type="text" required minlength="4" data-ph="subjectPlaceholder" placeholder="الموضوع">
-          <textarea id="message" rows="5" required minlength="10" data-ph="messagePlaceholder" placeholder="اكتب رسالتك هنا..."></textarea>
-          <button type="submit" class="btn btn-primary" data-t="submitBtn">إرسال الرسالة</button>
-        </form>
-
-        <h3 style="margin-top: 26px;" data-t="mapTitle">موقعنا على الخريطة</h3>
-        <iframe src="https://www.google.com/maps?q=Hong+Kong&output=embed" loading="lazy"></iframe>
       </div>
     </section>
   </main>
@@ -564,12 +143,12 @@
         <div class="footer-col">
           <h4 data-t="footerLinks">روابط سريعة</h4>
           <ul>
-            <li><a href="#home" data-t="home">الرئيسية</a></li>
-            <li><a href="#about" data-t="about">من نحن</a></li>
-            <li><a href="#services" data-t="services">الخدمات</a></li>
-            <li><a href="#gallery" data-t="gallery">معرض الصور</a></li>
-            <li><a href="#tips" data-t="tips">نصائح</a></li>
-            <li><a href="#contact" data-t="contact">تواصل معنا</a></li>
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -583,7 +162,6 @@
     </div>
   </footer>
 
- 
   <script src="script.js" defer></script>
 </body>
 </html>

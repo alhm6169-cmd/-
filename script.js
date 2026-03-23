@@ -468,6 +468,43 @@
   fontInc?.addEventListener('click', () => applyFontSize((Number(localStorage.getItem('fontSize')) || 16) + 1));
   fontDec?.addEventListener('click', () => applyFontSize((Number(localStorage.getItem('fontSize')) || 16) - 1));
 
+  // Mobile nav + active link
+  const navFlex = document.getElementById('navFlex');
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+
+  const closeNav = () => {
+    navFlex?.classList.remove('open');
+    hamburger?.classList.remove('active');
+  };
+
+  hamburger?.addEventListener('click', () => {
+    navFlex?.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 900) closeNav();
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) closeNav();
+  });
+
+  const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  navLinks.forEach((link) => {
+    const href = (link.getAttribute('href') || '').split('#')[0].toLowerCase();
+    if (href === '' && current === 'index.html') {
+      link.classList.add('active');
+    } else if (href === current || (href === 'index.html' && current === 'index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
   // Contact form
   const contactForm = document.getElementById('contactForm');
   const contactMsg = document.getElementById('successMsg');

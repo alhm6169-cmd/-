@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loving Homes | الحزم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-shell">
+      <nav>
+        <div class="logo">
+          <div class="logo-icon">🐾</div>
+          <span data-t="logoText">Loving Homes</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-flex" id="navFlex">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="packages.html" data-t="packagesNav">الحزم</a></li>
+            <li><a href="why.html" data-t="whyNav">لماذا تختارنا</a></li>
+            <li><a href="policies.html" data-t="policiesNav">الشروط والسياسات</a></li>
+            <li><a href="prebooking.html" data-t="prebookingNav">متطلبات الحجز</a></li>
+            <li><a href="news.html" data-t="newsNav">المدونة / الأخبار</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="faq.html" data-t="faq">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="location-pill" href="contact.html" data-t="location">📍 هونغ كونغ</a>
+            <button id="font-dec" class="text-btn" aria-label="تصغير الخط">A-</button>
+            <button id="font-inc" class="text-btn" aria-label="تكبير الخط">A+</button>
+            <select id="lang-toggle" style="padding: 6px 12px; border-radius: 5px; border: 1px solid #ccc; background-color: transparent; cursor: pointer; font-size: 14px;">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+            <button id="theme-toggle" class="icon-btn">🌙</button>
+            <a href="contact.html" class="btn btn-primary" data-t="book">احجز الآن</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="packages">
+      <div class="container">
+        <div class="section-title">
+          <h2 data-t="packagesTitle">حزم الإقامة</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="packages">
+          <div class="package-card">
+            <h4 data-t="pkgDay">حزمة اليوم الواحد</h4>
+            <p class="price" data-t="pkgDayPrice">99 يوان / يوم</p>
+            <ul>
+              <li data-t="pkgDay1">✓ المشي مرتين يوميًا</li>
+              <li data-t="pkgDay2">✓ منطقة لعب خارجية</li>
+              <li data-t="pkgDay3">✓ مسار الرشاقة</li>
+              <li data-t="pkgDay4">✓ حفر حفرة في الرمل</li>
+            </ul>
+            <button class="btn btn-primary booking-btn" data-package="pkgDay" data-t="choose">اختر الحزمة</button>
+          </div>
+
+          <div class="package-card popular">
+            <span class="badge" data-t="popular">الأكثر شهرة</span>
+            <h4 data-t="pkgClassic">الحزمة الكلاسيكية</h4>
+            <p class="price" data-t="pkgClassicPrice">249 يوان / 3 أيام</p>
+            <ul>
+              <li data-t="pkgClassic1">✓ المشي ثلاث مرات</li>
+              <li data-t="pkgClassic2">✓ ممارسة ثلاث أنشطة يوميًا</li>
+              <li data-t="pkgClassic3">✓ حظيرة لعب داخلية</li>
+              <li data-t="pkgClassic4">✓ منطقة للاسترخاء</li>
+              <li data-t="pkgClassic5">✓ جلسة حلاقة وتنظيف</li>
+            </ul>
+            <button class="btn btn-primary booking-btn" data-package="pkgClassic" data-t="choose">اختر الحزمة</button>
+          </div>
+
+          <div class="package-card">
+            <h4 data-t="pkgPremium">الحزمة المميزة</h4>
+            <p class="price" data-t="pkgPremiumPrice">499 يوان / أسبوع</p>
+            <ul>
+              <li data-t="pkgPremium1">✓ المشي أربع مرات وممارسة أربع أنشطة يوميًا</li>
+              <li data-t="pkgPremium2">✓ مساحة عشب خاصة</li>
+              <li data-t="pkgPremium3">✓ تحديثات صور يومية</li>
+              <li data-t="pkgPremium4">✓ مكافآت حسب الاتفاق مع المالك</li>
+              <li data-t="pkgPremium5">✓ فحص بيطري شامل</li>
+            </ul>
+            <button class="btn btn-primary booking-btn" data-package="pkgPremium" data-t="choose">اختر الحزمة</button>
+          </div>
+
+          <div class="package-card">
+            <h4 data-t="pkgCustom">الحزمة المخصصة</h4>
+            <p class="price" data-t="pkgCustomPrice">حسب الطلب</p>
+            <ul>
+              <li data-t="pkgCustom1">✓ تختار المدة والمرافق</li>
+              <li data-t="pkgCustom2">✓ خطة تغذية بحسب طلبك</li>
+              <li data-t="pkgCustom3">✓ إضافة خدمات نقل/صور/تدريب</li>
+            </ul>
+            <button class="btn btn-primary booking-btn" data-package="pkgCustom" data-t="customRequest">أرسل طلبك</button>
+          </div>
+        </div>
+        <p class="note" data-t="packagesNote">يمكن تصميم حزم مخصصة حسب احتياج كلبك.</p>
+      </div>
+    </section>
+
+    <div id="booking-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <h3 data-t="bookingTitle">نموذج شراء/حجز الحزمة</h3>
+        <p data-t="bookingDesc">املأ البيانات التالية لإتمام الطلب.</p>
+        <form id="bookingForm" class="contact-form" style="margin-top:8px;">
+          <input id="bk-name" type="text" required data-ph="namePlaceholder" placeholder="الاسم الكامل">
+          <input id="bk-email" type="email" required data-ph="emailPlaceholder" placeholder="البريد الإلكتروني">
+          <input id="bk-phone" type="tel" required data-ph="phonePlaceholder" placeholder="رقم الهاتف">
+          <select id="bk-package" required>
+            <option value="pkgDay" data-t="pkgDay">حزمة اليوم</option>
+            <option value="pkgClassic" data-t="pkgClassic">الحزمة الكلاسيكية</option>
+            <option value="pkgPremium" data-t="pkgPremium">الحزمة المميزة</option>
+            <option value="pkgCustom" data-t="pkgCustom">الحزمة المخصصة</option>
+          </select>
+          <textarea id="bk-note" rows="4" data-ph="customReqPlaceholder" placeholder="أضف طلبك هنا..."></textarea>
+          <h4 data-t="paymentTitle">طريقة الدفع</h4>
+          <div class="payment-grid">
+            <label><input type="radio" name="pay" value="card" checked> <span data-t="payCard">بطاقة ائتمان</span></label>
+            <label><input type="radio" name="pay" value="cash"> <span data-t="payCash">دفع عند الوصول</span></label>
+            <label><input type="radio" name="pay" value="transfer"> <span data-t="payTransfer">تحويل إلكتروني</span></label>
+          </div>
+          <button class="btn btn-primary" type="submit" data-t="confirmBuy">تأكيد الشراء</button>
+        </form>
+        <div id="bookingSuccess" class="success-message" data-t="bookingSuccess">تم استلام طلبك وسنتواصل معك للتأكيد.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 data-t="footerLogo">Loving Homes</h4>
+          <p data-t="footerDesc">فندق كلاب فاخر بمعايير عالمية.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footerLinks">روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html" data-t="home">الرئيسية</a></li>
+            <li><a href="about.html" data-t="about">من نحن</a></li>
+            <li><a href="services.html" data-t="services">الخدمات</a></li>
+            <li><a href="gallery.html" data-t="gallery">معرض الصور</a></li>
+            <li><a href="tips.html" data-t="tips">نصائح</a></li>
+            <li><a href="contact.html" data-t="contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footerContact">تواصل معنا</h4>
+          <p>Hong Kong</p>
+          <p>+86 139 4725 8643</p>
+          <p>ksjjdpoj@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Loving Homes. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
